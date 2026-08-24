@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -42,9 +42,13 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 h-16 lg:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/40 group-hover:border-primary transition-colors">
-            <span className="font-serif text-xl text-gold font-bold">C</span>
-          </div>
+        <Image
+  src="/logo.png"
+  alt="Chandra Art and Crafts"
+  width={60}
+  height={60}
+  className="rounded-full object-contain"
+  />
           <div className="flex flex-col leading-none">
             <span className="font-serif text-base lg:text-lg font-semibold text-foreground tracking-wide">
               Chandra

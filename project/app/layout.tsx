@@ -107,11 +107,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="font-sans">
-        {/* <Navbar /> */}
-        <main className="min-h-screen">{children}</main>
-        {/* <Footer /> */}
-        {/*<WhatsAppButton/>*/}
+      <body className={inter.variable}>
+        <Navbar />
+
+        <main className="min-h-screen pt-16 lg:pt-20">
+          {children}
+        </main>
+
+        <Footer />
+        <WhatsAppButton />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -30,9 +30,9 @@ export default function Home() {
               </span>
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-7xl font-semibold leading-[1.1] text-foreground animate-fade-up">
-              Heritage Furniture,
+              Welcome to Chandra Art &
               <br />
-              <span className="text-gradient-gold">Crafted by Hand</span>
+              <span className="text-gradient-gold">Crafts</span>
             </h1>
             <p
               className="mt-6 text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-up"
@@ -53,14 +53,14 @@ export default function Home() {
                 Explore Collection
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <a
-                href={waLink('Hello, I would like to enquire about your furniture collection.')}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/40 px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gold hover:bg-primary/10 transition-all duration-300"
-              >
-                Request a Quote
-              </a>
+            <a
+  href="/catalogue.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/40 px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gold hover:bg-primary/10 transition-all duration-300"
+>
+  View Catalogue
+</a>          
             </div>
           </div>
         </div>

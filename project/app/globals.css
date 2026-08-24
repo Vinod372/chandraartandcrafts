@@ -28,16 +28,21 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   html {
     scroll-behavior: smooth;
   }
-  body {
-    @apply bg-background text-foreground antialiased;
-    background-color: hsl(var(--background));
+
+  * {
+    border-color: hsl(var(--border));
   }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   ::selection {
     background-color: hsl(var(--primary) / 0.3);
     color: hsl(var(--foreground));
